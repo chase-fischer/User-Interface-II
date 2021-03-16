@@ -45,121 +45,197 @@ blockquote, q {
     *{
         box-sizing: border-box;
         padding:0;
-        margin:auto;
+        margin:0;
         max-width:100%;
     }
+/* General Styles */
 
     @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
- html{
+ 
+html{
      font-size: 62.5%;
      font-family: 'DotGothic16', sans-serif;
  }
+
  body{
      font-size: 1.8rem;
      line-height: 1.5;
-     color:whitesmoke;
-     background-color: darkslategray;
+     color:#132B34;
+     background-color:whitesmoke;
  }
+ 
+ section{
+     padding:4% 0;
+ }
+
  h1, h2, h3{
      letter-spacing: 3px;
+     margin-bottom: 2%;
  }
- h1{
-     display:flex;
-     font-size: 5rem;
-     display:inline-block;
-     justify-content:
- }
+
  h2{
      font-size: 3rem;
  }
+ 
  h3{
      font-size: 2.5rem;
  }
-nav{
-     display:flex;
-     justify-content: space-between;
-     align-items: flex-start;
-     max-width: 50%;
+
+
+ .title{
     
- }
- 
- .main{
+    width:25%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+ nav{
      display:flex;
      justify-content: space-around;
      align-items: center;
-     margin:auto;
-     padding:10px;
-     font-size: 3rem;
-
-
-
+     background-color:#4f879e;
+     top:0;
+     width:100%;
+     margin-right:4%;
  }
+
+
  a{
-     display:flex;
-     align-items:center;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: nowrap;
+     align-items: center;
      text-decoration: none;
-     color:whitesmoke;
-     text-decoration: none;
+     color:#132B34;
      font-size: 2.5rem;
-     display:inline-block
      transition:.3s;
  }
-    .gallery{
-     display:flex;
-     justify-content: space-around;
-     flex-wrap: wrap;
-     margin: 10px;
-     padding: 10px;
+  
+a:hover{
+color:whitesmoke;
 
-     
- }
-    .h3{
-        display:flex;
-        justify-content: center;
-        align-content: space-between;
-    }
-    .icon{
-        display:flex;
-        justify-content: space-evenly;
-        align-content: flex-end;
-        float:left;
-        width: 100px;
-        height: 100px;
-        background-size:cover;
-        margin:10px;
-        padding:10px;
-    }
-    a:hover{
-    color:orangered;
-    text-transform:uppercase;
-    }
-    button{
+}
+
+ /* Home Section Styles */
+
+ #home .left{
+    
+    background-image:url(https://tinyurl.com/vsy5a4x8);
+    height:80vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    max-width: 40%;
+}
+
+#home .text-container{
+    display:inline-block;
+    display:flex;
+    justify-content: flex-end;
+    padding:20% 0;
+    margin-left:4%;
+    max-width: 50%;
+}
+
+#home button{
+    padding:8% 6%;
+    font-size:1.8rem;
+    margin-right:4%;
+    border-radius:10px;
+    color:whitesmoke;
+    border:2px solid #132B34;
+    background-color: #4f879e;
+}
+#home button:hover{
+    background-color: #132B34;
+}
+
+/* Project Section Styles */
+
+.container{
+    display:flex;
+}
+.container div{
+    width:25%;
+}
+.container .text{
     display:flex;
     justify-content: center;
-    padding:5px;
-    background-color:whitesmoke;
-    width: 3%;
+    align-items: center;
+    padding:4% 0;
     text-align:center;
-    font-size: 2rem;
-    }
-    button:hover{
-        color:orangered;
-    }
+}
+.container .text div{
+    width:40%;
+}
+.bgimg{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom center;
+    height:50vh;
+}
 
-    .social{
-        display:flex;
-        justify-content: space-evenly;
-        align-content: center;
-        margin:20px;
-        padding:20px;
-        display:inline-block;
-    }
+.project1{
+    background-image:url('https://tinyurl.com/5fmfdbvx');
+}
+
+.project2{
+    background-image:url('https://tinyurl.com/jpkc4keb');
+}
+
+.project3{
+    background-image:url('https://tinyurl.com/3tcz75e5');
+}
+
+.project4{
+    background-image:url('https://tinyurl.com/5cvxhb32');
+}
+
+.project5{
+    background-image:url('https://tinyurl.com/3a5ynzv4');
+}
+
+.project6{
+    background-image:url('https://tinyurl.com/5yjf8nb4');
+}
+
+.project7{
+    background-image:url('https://tinyurl.com/h4xpapmw');
+}
+
+.project8{
+    background-image:url('https://tinyurl.com/pcjxef9k');
+}
+
+/* Footer Content Styles */
+
 footer{
     display:flex;
-    justify-content: space-evenly;
-    align-content: flex-end;
-    line-height: 3;
-    margin:10px;
-    padding:10px;
+    flex-wrap:wrap;
+    color:whitesmoke;
+    background-color:#4f879e;
+}
 
+.social, .contact{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer button{
+    
+    padding:3% 2%;
+    font-size:1.8rem;
+    margin:4%;
+    border-radius:5px;
+    color:#4f879e;
+    border:2px solid #132B34;
+    background-color: whitesmoke;
+    
 }
