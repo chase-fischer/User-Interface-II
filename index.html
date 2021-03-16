@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
     <title>Chase's Portfolio</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            display:flex;
+        }
+
+        .bgimg {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+h2, p{
+    text-align: center;
+}
+    </style>
 </head>
 
 <body>
@@ -23,16 +42,18 @@
 <section id="home">
     <div class="left">
     <!-- Background Image Goes Here -->
-        </div>
+    </div>
     <div class="text-container">
         <h2>Chase Fischer</h2>
             <div class="button">
                 <button onclick="#projects">My Projects</button>
-    </div>
+            </div>
+
         <p>Hello, my name is Chase Fischer.
      I am a 24 year old software engineer from Utah.
     I began my career in Web Development with a program called Lambda. It's been a great ride
 so far, and I look forward to seeing what is to come!</p>
+        </div>
 </section>
 
 <section id="projects">
@@ -119,20 +140,26 @@ so far, and I look forward to seeing what is to come!</p>
         </div>
 </section>
 <footer>
-<div class="social">
-    <div class="icon" style="background-image:url('https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png');"></div>
-    <a href="https://twitter.com/sk8erpro98">Twitter</a><br>
-    <div class="icon" style="background-image:url('https://i1.wp.com/blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Small.png?resize=125%2C125&ssl=1');"></div> <br>
-    <a href="https://codepen.io/cmfischer">CodePen</a>
-    
+    <section id="social">
+        <div class="icon">
+            <img src="https://tinyurl.com/4f59mmdu" width="70px" height="70px" alt="logo">
+                </div>    
+        <a href="https://twitter.com/sk8erpro98">Twitter</a>
+        <div class="icon2">
+            <img src="https://tinyurl.com/ze7kp9d2" width="70px" height="70px" alt="logo">
+                </div>
+        <a href="https://codepen.io/cmfischer">CodePen</a>
+</section>
 </div>
-<div class="contact">
-    <div class="button">
-    <button onclick="#">Contact Me</button>
+
+    <section class="contact">
+        <div class="contact">
+            <h2>Like What You See?</h2>
+                <div class="button">
+                <button onclick="tel:1-385-221-8133">Contact Me</button>
+                </div>
     </div>
-        <a href="tel:1-385-221-8133">385-221-8133</a><br>
-        <a href="mailto:chase.m.fischer@gmail.com">chase.m.fischer@gmail.com</a><br>
-</div>
+</section>
 </footer>
 </body>
 </html>

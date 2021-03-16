@@ -86,14 +86,16 @@ html{
     
     width:25%;
     display:flex;
-    justify-content: space-between;
-    align-items:center;
+    justify-content: flex-start;
+    font-size: 3rem;
+    align-self: center;
 
 }
  nav{
      display:flex;
      justify-content: space-around;
      align-items: center;
+     flex-direction: row;
      background-color:#4f879e;
      top:0;
      width:100%;
@@ -119,10 +121,10 @@ color:whitesmoke;
 
  /* Home Section Styles */
 
- #home .left{
-    
+.left{
+
     background-image:url(https://tinyurl.com/vsy5a4x8);
-    height:80vh;
+    height:65vh;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -130,13 +132,14 @@ color:whitesmoke;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    max-width: 40%;
+    max-width: 30%;
+    margin-bottom: 10px;
 }
 
-#home .text-container{
-    display:inline-block;
+.text-container{
+    
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     padding:20% 0;
     margin-left:4%;
     max-width: 50%;
@@ -151,65 +154,76 @@ color:whitesmoke;
     border:2px solid #132B34;
     background-color: #4f879e;
 }
+
 #home button:hover{
     background-color: #132B34;
+    border-color: whitesmoke;
 }
 
 /* Project Section Styles */
 
 .container{
     display:flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
-.container div{
-    width:25%;
+.text{
+    max-width: 25%;
+    text-align: center;
 }
-.container .text{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding:4% 0;
-    text-align:center;
-}
-.container .text div{
-    width:40%;
-}
-.bgimg{
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:bottom center;
-    height:50vh;
+.container .bgimg{
+
+   display:flex; 
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+   max-width: 25%;
+   margin-top: 3%;
+   margin-bottom: 2%;
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position:bottom center;
+   height:50vh;
 }
 
 .project1{
     background-image:url('https://tinyurl.com/5fmfdbvx');
+
 }
 
 .project2{
     background-image:url('https://tinyurl.com/jpkc4keb');
+
 }
 
 .project3{
     background-image:url('https://tinyurl.com/3tcz75e5');
+
 }
 
 .project4{
     background-image:url('https://tinyurl.com/5cvxhb32');
+  
 }
 
 .project5{
     background-image:url('https://tinyurl.com/3a5ynzv4');
+
 }
 
 .project6{
     background-image:url('https://tinyurl.com/5yjf8nb4');
+
 }
 
 .project7{
     background-image:url('https://tinyurl.com/h4xpapmw');
+
 }
 
 .project8{
     background-image:url('https://tinyurl.com/pcjxef9k');
+
 }
 
 /* Footer Content Styles */
@@ -221,15 +235,35 @@ footer{
     background-color:#4f879e;
 }
 
-.social, .contact{
-    width:50%;
+#social{
+    display:inline-block;
+    width:35%;
     display:flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.contact{
+    display: inline-block;
+    width:65%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+}
+.icon{
+display:inline-block
+}
+
+
+.icon2{
+    display:inline-block;
+}
+
 footer button{
     
+    line-height: 1.5;
     padding:3% 2%;
     font-size:1.8rem;
     margin:4%;
@@ -238,4 +272,8 @@ footer button{
     border:2px solid #132B34;
     background-color: whitesmoke;
     
+}
+footer button:hover{
+    background-color:#132B34;
+    border-color: whitesmoke;
 }
