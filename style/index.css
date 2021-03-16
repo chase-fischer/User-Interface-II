@@ -52,10 +52,6 @@ blockquote, q {
 
     @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
  
-
-    div{
-        border:2px solid black;
-    }
 html{
      font-size: 62.5%;
      font-family: 'DotGothic16', sans-serif;
@@ -137,6 +133,10 @@ background-color:whitesmoke;
 
  /* Home Section Styles */
 
+.left div{
+    width:40%;
+}
+
 .left{
 
     background-image:url(https://tinyurl.com/vsy5a4x8);
@@ -184,6 +184,7 @@ background-color:whitesmoke;
     color:whitesmoke;
     border:2px solid #132B34;
     background-color: #4f879e;
+    transition: .3s;
 }
 
 #home button:hover{
@@ -308,6 +309,7 @@ footer button{
     color:#4f879e;
     border:2px solid #132B34;
     background-color: whitesmoke;
+    transition: .3s;
     
 }
 footer button:hover{
